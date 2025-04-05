@@ -1,2 +1,3 @@
 requests
 pyyaml
+blinker==1.8.2
