@@ -1,9 +1,10 @@
 from typing import Any
 import os
 import chromadb
-from langchain.embeddings import Embeddings
-from langchain.vectorstores import Chroma
-from application.tools.logger import logger
+from langchain_core.embeddings import Embeddings
+from langchain_community.vectorstores import Chroma
+from src.application.tools.logger import logger
+
 
 def load_chroma(embedding: Embeddings, persist_path: str = "chroma_logs_db") -> Any:
     """

@@ -1,6 +1,6 @@
 from typing import List, Dict, Any
-from langchain.document import Document
-from application.tools.logger import logger
+from langchain_core.documents import Document
+from src.application.tools.logger import logger
 
 def update_documents(db: Dict[str, Any], documents: List[Document]) -> bool:
     """

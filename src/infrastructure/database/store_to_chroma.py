@@ -1,9 +1,10 @@
 from typing import List, Any
 import os
 import chromadb
-from langchain.document import Document
-from langchain.embeddings import Embeddings
-from application.tools.logger import logger
+from langchain_core.documents import Document
+from langchain_core.embeddings import Embeddings
+
+from src.application.tools.logger import logger
 
 def store_to_chroma(docs: List[Document], embedding: Embeddings, persist_path: str = "chroma_logs_db") -> Any:
     """

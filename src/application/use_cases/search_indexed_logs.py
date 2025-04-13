@@ -1,9 +1,10 @@
 from typing import List, Dict, Any
-from infrastructure.database.search_logs import search_logs
-from infrastructure.database.load_chroma import load_chroma
-from infrastructure.embeddings.embedder import get_azure_embedding
-from infrastructure.data_processing.data_preprocessor import get_all_documents
-from application.tools.logger import logger
+from src.infrastructure.database.search_logs import search_logs
+from src.infrastructure.database.load_chroma import load_chroma
+from src.infrastructure.embeddings.embedder import get_azure_embedding
+from src.infrastructure.database.get_all_documents import get_all_documents
+from src.application.tools.logger import logger
+
 
 def search_indexed_logs(config, query: str, k: int = 5):
     """Search indexed logs."""

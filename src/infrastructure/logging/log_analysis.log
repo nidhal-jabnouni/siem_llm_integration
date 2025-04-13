@@ -1587,3 +1587,17 @@ ValueError: Expected include item to be one of embeddings, documents, metadatas,
 2025-04-13 14:45:58,572 - vector_store - INFO - Searching logs with query: 'xss'
 2025-04-13 14:45:59,644 - httpx - INFO - HTTP Request: POST https://test-siem.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-01 "HTTP/1.1 200 OK"
 2025-04-13 14:45:59,696 - vector_store - INFO - Found 4 results
+2025-04-13 18:47:15,703 - src.application.tools.logger - ERROR - Error in main function: module 'src.application.tools.logger' has no attribute 'error'
+2025-04-13 18:49:11,197 - src.application.tools.logger - ERROR - Error in main function: module 'src.application.tools.logger' has no attribute 'error'
+2025-04-13 18:53:48,466 - src.application.tools.logger - INFO - Indexing log file: Mock_Test_Data\fox_alerts.txt
+2025-04-13 18:53:48,466 - src.application.tools.logger - INFO - Loading log data from Mock_Test_Data\fox_alerts.txt
+2025-04-13 18:53:48,492 - src.application.tools.logger - INFO - Loaded 4 log entries
+2025-04-13 18:53:48,494 - src.application.tools.logger - INFO - Created 4 documents from log entries
+2025-04-13 18:53:48,495 - src.application.tools.logger - INFO - Split into 4 chunks
+2025-04-13 18:53:48,495 - src.application.tools.logger - INFO - Processed 4 chunks
+2025-04-13 18:53:48,495 - src.application.tools.logger - INFO - Initializing Azure OpenAI embeddings...
+2025-04-13 18:53:48,564 - src.application.tools.logger - INFO - Storing 4 documents in Chroma at chroma_logs_db
+2025-04-13 18:53:48,592 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-13 18:53:49,911 - httpx - INFO - HTTP Request: POST https://test-siem.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-04-13 18:53:50,108 - src.application.tools.logger - INFO - Successfully stored documents in Chroma
+2025-04-13 18:53:50,109 - src.application.tools.logger - INFO - Successfully indexed logs to chroma_logs_db

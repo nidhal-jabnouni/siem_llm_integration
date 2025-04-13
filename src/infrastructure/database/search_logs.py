@@ -1,8 +1,10 @@
 from typing import Dict, Any, List
-from langchain.document import Document
-from application.tools.logger import logger
-from langchain.vectorstores import Chroma
-from langchain.embeddings import Embeddings
+from langchain_core.documents import Document
+from src.application.tools.logger import logger
+from langchain_community.vectorstores import Chroma
+
+from langchain_core.embeddings import Embeddings
+
 def search_logs(db: Dict[str, Any], query: str, k: int = 5) -> List[Dict[str, Any]]:
     """
     Search the vector database for relevant log entries using direct embedding.

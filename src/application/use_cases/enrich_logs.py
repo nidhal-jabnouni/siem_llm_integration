@@ -1,10 +1,12 @@
-import tools.logger as logger
+from src.application.tools.logger import logger
+
 from typing import Optional
-from infrastructure.data_processing.data_preprocessor import load_and_process_logs, get_all_documents
-from infrastructure.database.load_chroma import load_chroma
-from infrastructure.database.update_documents import update_documents
-from infrastructure.embeddings.embedder import get_azure_embedding
-from domain.services.llm_enricher import LogEnricher
+from src.infrastructure.data_processing.data_preprocessor import load_and_process_logs
+from src.infrastructure.database.get_all_documents import get_all_documents
+from src.infrastructure.database.load_chroma import load_chroma
+from src.infrastructure.database.update_documents import update_documents
+from src.infrastructure.embeddings.embedder import get_azure_embedding
+from src.domain.services.llm_enricher import LogEnricher
 
 
 def enrich_logs(config, batch_size: Optional[int] = None, batch_delay: Optional[float] = None):

@@ -1,5 +1,6 @@
 from langchain_openai import AzureOpenAIEmbeddings
-import src.application.tools.logger as logger
+from src.application.tools.logger import logger
+
 import os
 
 def get_azure_embedding() -> AzureOpenAIEmbeddings:

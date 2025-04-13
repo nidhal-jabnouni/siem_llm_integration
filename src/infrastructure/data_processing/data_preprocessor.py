@@ -1,7 +1,8 @@
 """Module for processing log data into documents for vector embedding."""
 import pandas as pd
 from typing import List, Optional
-import src.application.tools.logger as logger
+from src.application.tools.logger import logger
+
 from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 

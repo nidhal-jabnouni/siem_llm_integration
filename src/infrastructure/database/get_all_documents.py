@@ -1,7 +1,9 @@
 from typing import Dict, Any, List
-from langchain.document import Document
-from application.tools.logger import logger
-from langchain.vectorstores import Chroma
+from langchain_core.documents import Document
+from src.application.tools.logger import logger
+
+from langchain_community.vectorstores import Chroma
+
 
 
 def get_all_documents(db: Dict[str, Any]) -> List[Document]:

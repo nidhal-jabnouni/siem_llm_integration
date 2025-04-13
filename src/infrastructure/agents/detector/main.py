@@ -1,9 +1,9 @@
-from presentation.cli.commands import setup_argparse
-from infrastructure.config.settings import load_config
-from application.use_cases.index_logs import index_logs
-from application.use_cases.search_indexed_logs import search_indexed_logs
-from application.use_cases.enrich_logs import enrich_logs
-from application.tools.logger import logger
+from src.presentation.cli.commands import setup_argparse
+from src.infrastructure.config.settings import load_config
+from src.application.use_cases.index_logs import index_logs
+from src.application.use_cases.search_indexed_logs import search_indexed_logs
+from src.application.use_cases.enrich_logs import enrich_logs
+from src.application.tools.logger import logger
 import sys
 
 def main():
