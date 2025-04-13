@@ -1,14 +1,12 @@
-# Core LangChain packages (v0.2+ structure)
-langchain==0.1.16
-langchain-core==0.1.45
-langchain-openai==0.1.2
-langchain-community==0.0.34
-
+langchain-core==0.1.12
+langchain-openai==0.0.5
+chromadb==0.4.22
+langchain-community==0.0.14
 # Azure OpenAI support (GPT-4o / embeddings)
 openai>=1.12.0,<2.0.0
 
 # Vector database
-chromadb==0.4.24
+
 
 # Tokenizer for OpenAI models
 tiktoken==0.6.0

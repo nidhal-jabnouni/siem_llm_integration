@@ -1,5 +1,6 @@
 from typing import List, Dict, Any
-from langchain_core.documents import Document
+from langchain.schema import Document
+from langchain.embeddings.base import Embeddings
 from src.application.tools.logger import logger
 
 def update_documents(db: Dict[str, Any], documents: List[Document]) -> bool:

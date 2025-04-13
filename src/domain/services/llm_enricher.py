@@ -1,10 +1,10 @@
 from typing import Dict, List
 from src.infrastructure.config.settings import Config
 from src.application.tools.logger import logger
-
-from time import *
-from langchain_core.documents import Document
-from langchain_openai import AzureChatOpenAI
+from langchain.vectorstores import Chroma
+import time
+from langchain.schema import Document
+from openai import AzureOpenAI
 
 class LogEnricher:
     """Class for enriching log data with LLM insights."""
@@ -17,7 +17,7 @@ class LogEnricher:
             config: Application configuration
         """
         self.config = config
-        self.client = AzureChatOpenAI(
+        self.client = AzureOpenAI(
             api_key=config.azure_openai_api_key,
             api_version=config.azure_openai_api_version,
             azure_endpoint=config.azure_openai_endpoint

@@ -2,7 +2,6 @@ from src.application.tools.logger import logger
 
 from typing import Optional
 from src.infrastructure.data_processing.data_preprocessor import load_and_process_logs
-from src.infrastructure.database.load_chroma import load_chroma
 from src.infrastructure.database.store_to_chroma import store_to_chroma
 from src.infrastructure.embeddings.embedder import get_azure_embedding
 

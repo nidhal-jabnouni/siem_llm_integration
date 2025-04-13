@@ -1,5 +1,6 @@
 from typing import Dict, Any, List
-from langchain_core.documents import Document
+from langchain.schema import Document
+from langchain.embeddings.base import Embeddings
 from src.application.tools.logger import logger
 from langchain_community.vectorstores import Chroma
 

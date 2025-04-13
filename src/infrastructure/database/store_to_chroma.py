@@ -1,8 +1,8 @@
 from typing import List, Any
 import os
 import chromadb
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
+from langchain.schema import Document
+from langchain.embeddings.base import Embeddings
 
 from src.application.tools.logger import logger
 

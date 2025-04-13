@@ -47,5 +47,5 @@ def load_config() -> Config:
         chunk_size=int(os.getenv("CHUNK_SIZE", "1000")),
         chunk_overlap=int(os.getenv("CHUNK_OVERLAP", "100")),
         batch_size=int(os.getenv("BATCH_SIZE", "5")),
-        batch_delay=float(os.getenv("BATCH_DELAY", "1.0"))
+        batch_delay=float(os.getenv("BATCH_DELAY", "5.0"))
     )

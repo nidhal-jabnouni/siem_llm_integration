@@ -23,7 +23,10 @@ def search_indexed_logs(config, query: str, k: int = 5):
         # Display results
         print(f"\nSearch results for: '{query}'")
         print("=" * 50)
+        docs = get_all_documents(db)
+    
         
+        f
         for i, result in enumerate(results):
             print(f"\nResult {i+1} (Score: {result['similarity_score']:.4f}):")
             print("-" * 40)
@@ -31,6 +34,7 @@ def search_indexed_logs(config, query: str, k: int = 5):
             print("-" * 40)
         
         return True
+        
     except Exception as e:
         logger.error(f"Error searching logs: {e}")
         return False
