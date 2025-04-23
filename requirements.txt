@@ -1,3 +1,8 @@
+
+requests
+pyyaml
+blinker==1.8.2
+
 langchain-core==0.1.53
 langchain-openai==0.1.2 
 chromadb==0.4.24
@@ -21,3 +26,4 @@ numpy==1.26.4
 # argparse
 # typing
 # logging
+
