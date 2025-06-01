@@ -2,11 +2,41 @@
 import pandas as pd
 from typing import List, Optional
 from src.application.tools.logger import logger
-
+import csv
+import os
 from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+def write_nested_data_to_csv(data, output_file, sep='.'):
+    def flatten(d, parent_key=''):
+        items = []
+        for k, v in d.items():
+            new_key = f"{parent_key}{sep}{k}" if parent_key else k
+            if isinstance(v, dict):
+                items.extend(flatten(v, new_key).items())
+            elif isinstance(v, list):
+                items.append((new_key, ', '.join(map(str, v))))
+            else:
+                items.append((new_key, v))
+        return dict(items)
 
+    # Flatten all items
+    flat_data = [flatten(item) for item in data]
+
+    # Extract all column names
+    all_keys = set().union(*(item.keys() for item in flat_data))
+    for item in flat_data:
+      for key in all_keys:
+        
+        nonfiltered_keys = all_keys[item] 
+        if type(nonfiltered_keys) is str:
+           all_keys[item]=nonfiltered_keys.replace('\n', ' ')
+
+    # Write to CSV
+    with open(output_file, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=sorted(all_keys))
+        writer.writeheader()
+        writer.writerows(flat_data)
 
 def load_and_process_logs(file_path: str, chunk_size: int = 1000, chunk_overlap: int = 100) -> List[Document]:
     """

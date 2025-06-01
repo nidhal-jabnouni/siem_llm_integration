@@ -23,6 +23,7 @@ def setup_argparse() -> argparse.Namespace:
     enrich_parser = subparsers.add_parser("enrich", help="Enrich logs with LLM insights")
     enrich_parser.add_argument("--batch-size", type=int, default=5, help="Number of documents to process in each batch")
     enrich_parser.add_argument("--batch-delay", type=float, default=1.0, help="Delay between batches to avoid rate limiting")
-    
+    # Write CSV command
+    write_csv_parser = subparsers.add_parser("write_csv", help="Write nested data to CSV")
     
     return parser.parse_args()

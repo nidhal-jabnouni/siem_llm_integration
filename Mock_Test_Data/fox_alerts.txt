@@ -4,3 +4,113 @@ time,name,ip,host,short,time_label,event_label
 1642213957,Wazuh: ClamAV database update,172.17.131.81,mail,W-Sys-Cav,false_positive,-
 1642213962,Wazuh: ClamAV database update,172.17.131.81,mail,W-Sys-Cav,false_positive,-
 1643932807,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932807,Wazuh: First time this IDS alert is generated.,192.168.131.109,internal_share,W-All-Ids,false_positive,-
+1643932807,Wazuh: First time this IDS alert is generated.,192.168.128.1,inet-firewall,W-All-Ids,false_positive,-
+1643932807,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932819,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932819,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932819,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932819,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932827,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932827,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932827,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932827,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932837,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932837,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932837,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932837,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932861,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932861,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932861,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932861,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932873,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932873,Wazuh: Multiple IDS alerts for same id.,192.168.131.109,internal_share,W-All-Mul1,false_positive,-
+1643932873,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932873,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932896,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932896,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932896,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932896,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932913,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932913,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932913,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932913,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932936,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932936,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932936,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932936,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932958,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932958,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932958,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932958,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932977,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932977,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932977,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932977,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643932987,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932987,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932987,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932987,Wazuh: Multiple IDS alerts for same id.,192.168.128.1,inet-firewall,W-All-Mul1,false_positive,-
+1643932995,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643932995,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643932995,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643932995,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933008,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933008,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933008,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933008,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933028,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933028,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933028,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933028,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933042,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933042,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933042,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933042,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933062,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933062,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933062,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933062,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933082,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933082,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933082,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933082,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933090,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933090,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933090,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933090,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933098,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933098,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933098,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933098,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933107,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933107,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933107,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933107,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933120,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933120,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933120,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933120,Wazuh: Multiple IDS alerts for same id.,192.168.128.1,inet-firewall,W-All-Mul1,false_positive,-
+1643933123,Wazuh: ClamAV database update,10.237.2.255,mail,W-Sys-Cav,false_positive,-
+1643933128,Wazuh: ClamAV database update,10.237.2.255,mail,W-Sys-Cav,false_positive,-
+1643933133,Wazuh: ClamAV database update,10.237.2.255,mail,W-Sys-Cav,false_positive,-
+1643933134,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933134,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933134,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933134,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933138,Wazuh: ClamAV database update,10.237.2.255,mail,W-Sys-Cav,false_positive,-
+1643933143,Wazuh: ClamAV database update,10.237.2.255,mail,W-Sys-Cav,false_positive,-
+1643933143,Wazuh: ClamAV database update,10.237.2.255,mail,W-Sys-Cav,false_positive,-
+1643933157,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933157,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933157,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933157,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933176,Wazuh: ClamAV database update,172.28.192.97,smith_mail,W-Sys-Cav,false_positive,-
+1643933180,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933180,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933180,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933180,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal
+1643933195,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.131.109,internal_share,S-Dns-Qry3,false_positive,dnsteal
+1643933195,Wazuh: IDS event.,192.168.131.109,internal_share,W-All-Evt,false_positive,-
+1643933195,Wazuh: IDS event.,192.168.128.1,inet-firewall,W-All-Evt,false_positive,-
+1643933195,Suricata: Alert - ET INFO Observed DNS Query to .biz TLD,192.168.128.1,inet-firewall,S-Dns-Qry3,false_positive,dnsteal

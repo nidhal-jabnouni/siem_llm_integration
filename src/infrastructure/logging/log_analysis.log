@@ -5620,3 +5620,19 @@ See https://docs.trychroma.com/migration for more information or join our discor
 2025-06-01 11:39:20,026 - httpx - INFO - HTTP Request: POST https://test-siem.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
 2025-06-01 11:39:20,305 - src.application.tools.logger - INFO - Successfully updated 5 documents in Chroma
 2025-06-01 11:39:20,305 - src.application.tools.logger - INFO - Successfully enriched and updated all documents
+2025-06-01 11:59:15,422 - src.application.tools.logger - ERROR - Error in main function: name 'null' is not defined
+2025-06-01 12:01:48,939 - src.application.tools.logger - INFO - Enriching documents with batch size 5 and delay 1.0
+2025-06-01 12:01:48,939 - src.application.tools.logger - INFO - Initializing Azure OpenAI embeddings...
+2025-06-01 12:01:49,003 - src.application.tools.logger - INFO - Loading Chroma database from chroma_logs_db
+2025-06-01 12:01:49,028 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-01 12:01:49,185 - src.application.tools.logger - INFO - Retrieving all documents from Chroma
+2025-06-01 12:01:49,235 - src.application.tools.logger - INFO - Retrieved 5 documents
+2025-06-01 12:01:49,236 - src.application.tools.logger - INFO - Retrieved 5 documents
+2025-06-01 12:01:49,244 - src.application.tools.logger - INFO - Initialized LogEnricher with Azure OpenAI
+2025-06-01 12:01:49,244 - src.application.tools.logger - INFO - Processing batch 1/1
+2025-06-01 12:01:49,245 - src.application.tools.logger - INFO - Updating 5 documents in Chroma
+2025-06-01 12:01:50,275 - httpx - INFO - HTTP Request: POST https://test-siem.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-06-01 12:01:50,484 - src.application.tools.logger - INFO - Successfully updated 5 documents in Chroma
+2025-06-01 12:01:50,485 - src.application.tools.logger - INFO - Successfully enriched and updated all documents
+2025-06-01 12:01:56,076 - src.application.tools.logger - ERROR - Error in main function: name 'null' is not defined
+2025-06-01 12:09:08,978 - src.application.tools.logger - ERROR - Error in main function: 'set' object is not subscriptable
