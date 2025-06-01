@@ -40,8 +40,8 @@ class LogEnricher:
             Analyze the following security log entry and provide:
             1. A threat assessment (Low, Medium, High)
             2. Potential attack type or security issue
-            3. Recommended actions
-            4. Additional context about what this security event might mean
+            3. possibility of intervention or mitigation
+            
             
             Log entry:
             {log_entry}
@@ -57,7 +57,22 @@ class LogEnricher:
                     {"role": "system", "content": "You are a cybersecurity expert analyzing security logs."},
                     {"role": "user", "content": prompt}
                 ],
-                response_format={"type": "json_object"},
+               response_format={
+        "type": "json_schema",
+        "json_schema": {
+            "name": "security_analysis",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "attack_type": {"type": "string"},
+                    "severity": {"type": "string", "enum": ["low", "medium", "high"]},
+                    "intervention_required": {"type": "boolean"}
+                },
+                "required": ["attack_type", "severity", "intervention_required"],
+                "additionalProperties": False
+            }
+        }
+    },
                 temperature=0.3
             )
             
