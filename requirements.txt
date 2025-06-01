@@ -1,23 +1,60 @@
-langchain-core==0.1.53
-langchain-openai==0.1.2 
-chromadb==0.4.24
-langchain-community==0.0.34
-# Azure OpenAI support (GPT-4o / embeddings)
-openai>=1.12.0,<2.0.0
+# LangGraph Reactor Agent Requirements
+# Core LangGraph and LangChain dependencies
+langgraph==0.3.1
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-core>=0.1.23
 
-# Core dependencies
-langchain==0.1.16
-pandas==2.2.1
-python-dotenv==1.0.1
+# Azure OpenAI integration
+langchain-openai>=0.0.8
+openai>=1.12.0
 
-# Vector database
-chromadb==0.4.24
-tiktoken==0.6.0
+# Vector database and embeddings
+chromadb>=0.4.22
+sentence-transformers>=2.2.2
 
-# Text processing
-numpy==1.26.4
+# Type hints and utilities
+typing-extensions>=4.9.0
+annotated-types>=0.6.0
 
-# Utilities (included in Python standard library)
-# argparse
-# typing
-# logging
+# Environment and configuration
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Logging and utilities
+structlog>=23.2.0
+
+# HTTP client (for potential web requests)
+httpx>=0.26.0
+requests>=2.31.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Optional: For enhanced text processing
+tiktoken>=0.5.2
+
+# Optional: For monitoring and observability
+langsmith>=0.0.87
+
+# Development and testing dependencies (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.8.0
+
+# Security and validation
+cryptography>=41.0.0
+certifi>=2023.11.17
+
+# Optional: For enhanced JSON handling
+orjson>=3.9.0
+
+# Optional: For better datetime handling
+python-dateutil>=2.8.2
+
+pyppeteer

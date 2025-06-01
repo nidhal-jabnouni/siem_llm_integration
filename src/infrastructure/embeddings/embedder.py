@@ -1,6 +1,6 @@
 from langchain_openai import AzureOpenAIEmbeddings
 from src.application.tools.logger import logger
-
+from chromadb.api.types import EmbeddingFunction
 import os
 
 def get_azure_embedding() -> AzureOpenAIEmbeddings:
@@ -24,3 +24,11 @@ def get_azure_embedding() -> AzureOpenAIEmbeddings:
     except Exception as e:
         logger.error(f"Failed to initialize Azure OpenAI embeddings: {e}")
         raise
+
+
+class AzureEmbeddingFunction(EmbeddingFunction):
+    def __init__(self):
+        self.embedder = get_azure_embedding()
+
+    def __call__(self, input: list[str]) -> list[list[float]]:
+        return self.embedder.embed_documents(input)
